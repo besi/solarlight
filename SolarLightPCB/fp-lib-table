@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "TP4056")(type "KiCad")(uri "${KIPRJMOD}/lib/TP4056/TP4056.pretty")(options "")(descr ""))
+  (lib (name "NeopixelStrip")(type "KiCad")(uri "${KIPRJMOD}/lib/NeopixelStrip/NeopixelStrip.pretty")(options "")(descr ""))
+)
