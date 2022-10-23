@@ -1,0 +1,6 @@
+[submodule "SolarLightPCB/lib/NeopixelStrip"]
+	path = SolarLightPCB/lib/NeopixelStrip
+	url = https://github.com/besi/neopixelstrip-kicad
+[submodule "SolarLightPCB/lib/TP4056"]
+	path = SolarLightPCB/lib/TP4056
+	url = https://github.com/besi/TP4056
