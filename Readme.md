@@ -10,7 +10,7 @@ The following parts are used in the project.
 | [Charger][] | TP4056 Lipo Charger  |
 | [Solar Panel][] | 110x60mm Solar Panel  |
 | [Voltage Regulator][] | MCP1700-3302E  |
-| [Neopixels][] | Neopixel WS1  |
+| [Neopixels][] | Neopixel WS2812b  |
 | LED | Status LED  |
 | Resistor | Resistor for LED Value? |
 | Capacitor | Value? |
