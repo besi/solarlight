@@ -1479,7 +1479,7 @@
     (uuid 6732d4fc-02ff-4210-8868-4a455e8eb581)
     (property "Reference" "U3" (id 0) (at 162.814 36.576 0))
     (property "Value" "MCP1700-3302E" (id 1) (at 162.814 34.544 0))
-    (property "Footprint" "Package_TO_SOT_THT:TO-92" (id 2) (at 162.814 33.909 0)
+    (property "Footprint" "Package_TO_SOT_THT:TO-92L_Wide" (id 2) (at 162.814 33.909 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" (id 3) (at 162.814 40.894 0)
@@ -1988,7 +1988,7 @@
       (reference "U2") (unit 1) (value "WeMos_D1_mini") (footprint "Module:WEMOS_D1_mini_light")
     )
     (path "/6732d4fc-02ff-4210-8868-4a455e8eb581"
-      (reference "U3") (unit 1) (value "MCP1700-3302E") (footprint "Package_TO_SOT_THT:TO-92")
+      (reference "U3") (unit 1) (value "MCP1700-3302E") (footprint "Package_TO_SOT_THT:TO-92L_Wide")
     )
   )
 )
