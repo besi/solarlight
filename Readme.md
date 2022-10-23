@@ -1,4 +1,8 @@
 # Solar Light
+A smart, solar powered light that lights up in various colors.
+
+![](doc/mockup-front.png)
+![](doc/mockup-back.png)
 
 # Parts
 The following parts are used in the project.
