@@ -1193,10 +1193,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SCK" (shape input) (at 180.086 107.188 180) (fields_autoplaced)
+  (global_label "SCK" (shape input) (at 190.246 107.188 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid f6bb038e-7f32-49a8-8011-608ebad7bc02)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 173.9234 107.1086 0)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 184.0834 107.1086 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -1264,7 +1264,7 @@
   (symbol (lib_id "power:+3V3") (at 154.178 133.604 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 2c65fd9b-6b86-4de9-88d8-fcb1dcaf593d)
-    (property "Reference" "#PWR?" (id 0) (at 154.178 137.414 0)
+    (property "Reference" "#PWR0106" (id 0) (at 154.178 137.414 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (id 1) (at 153.289 129.921 0))
@@ -1458,21 +1458,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 4b43500c-2da0-4ff0-87d7-6237673c0fb6))
-  )
-
-  (symbol (lib_id "Jumper:Jumper_2_Bridged") (at 185.166 107.188 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid a04ab534-b3ff-41d2-b40f-b10866f1afa8)
-    (property "Reference" "JP2" (id 0) (at 183.007 103.505 0))
-    (property "Value" "Bridge" (id 1) (at 181.737 105.156 0))
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" (id 2) (at 185.166 107.188 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 185.166 107.188 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8ffbff08-7c4f-4418-bb1c-e6b77c82b9da))
-    (pin "2" (uuid 83a8b93b-509a-4919-b643-272f369181df))
   )
 
   (symbol (lib_id "Jumper:Jumper_2_Bridged") (at 169.545 38.608 0) (unit 1)
@@ -1792,6 +1777,9 @@
     (path "/937fd4db-7a00-448a-9e53-d8d50f377b1c"
       (reference "#PWR0105") (unit 1) (value "+3V3") (footprint "")
     )
+    (path "/2c65fd9b-6b86-4de9-88d8-fcb1dcaf593d"
+      (reference "#PWR0106") (unit 1) (value "+3V3") (footprint "")
+    )
     (path "/e78c0649-b4a3-4f91-ac29-c9de53c1e159"
       (reference "#PWR0107") (unit 1) (value "+3V3") (footprint "")
     )
@@ -1825,9 +1813,6 @@
     (path "/c0094c7e-4def-4ceb-b93e-d1b073861880"
       (reference "#PWR0117") (unit 1) (value "GND") (footprint "")
     )
-    (path "/2c65fd9b-6b86-4de9-88d8-fcb1dcaf593d"
-      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
-    )
     (path "/1b639698-fdc2-412d-93eb-4fc53c894eea"
       (reference "BT1") (unit 1) (value "Battery_Cell") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
@@ -1842,9 +1827,6 @@
     )
     (path "/92f89648-e51d-4dc6-affe-eb5a2204943b"
       (reference "JP1") (unit 1) (value "Deep Sleep") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm")
-    )
-    (path "/a04ab534-b3ff-41d2-b40f-b10866f1afa8"
-      (reference "JP2") (unit 1) (value "Bridge") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
     )
     (path "/a7c8a88d-781a-4fef-ada5-cbae7e10a79c"
       (reference "JP3") (unit 1) (value "POWER ON") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
