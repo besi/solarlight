@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.7,
-          "height": 1.4,
-          "width": 2.0
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 2.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -56,6 +56,7 @@
         }
       ],
       "drc_exclusions": [
+        "courtyards_overlap|134593201|82973201|b3f29407-260f-4203-9798-ff8f5e7a0b75|f8ce7fc9-b475-4d63-a213-a5191ec51a48",
         "courtyards_overlap|91444001|57790001|186de882-3388-45f0-bf9f-78e493f59352|f916cb64-e721-4d0c-8dfe-c9860ed47771",
         "courtyards_overlap|91480001|58020001|186de882-3388-45f0-bf9f-78e493f59352|f916cb64-e721-4d0c-8dfe-c9860ed47771",
         "courtyards_overlap|94483999|65380001|186de882-3388-45f0-bf9f-78e493f59352|2a667fe7-d7f9-415e-9d68-b30ccbc3f4b6",
@@ -110,7 +111,7 @@
         "max_error": 0.005,
         "min_clearance": 0.39999999999999997,
         "min_copper_edge_clearance": 0.0,
-        "min_hole_clearance": 0.39999999999999997,
+        "min_hole_clearance": 0.44999999999999996,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
