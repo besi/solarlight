@@ -3,3 +3,4 @@
 *fp-info-cache
 *.kicad_prl
 *fp-lib-table
+**/sym-lib-table
