@@ -4,3 +4,7 @@
 *.kicad_prl
 *fp-lib-table
 **/sym-lib-table
+.DS_Store
+/SolarLightPCB/SolarLight-rounded.kicad_pcb
+/SolarLightPCB/SolarLight-rounded.kicad_pro
+/SolarLightPCB/SolarLight.round-tracks-config
