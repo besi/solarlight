@@ -33,7 +33,7 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
+          "drill": 0.8,
           "height": 2.0,
           "width": 2.8
         },
@@ -383,7 +383,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "SolarLight.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
