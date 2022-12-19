@@ -6,8 +6,8 @@
 
   (title_block
     (title "Solar Light")
-    (date "2022-10-23")
-    (rev "v0.1")
+    (date "2022-12-19")
+    (rev "v0.7")
     (company "Fablab Zürich / Beat Besmer / Bernd Heistercamp")
   )
 
@@ -704,13 +704,13 @@
       )
     )
     (symbol "NeopixelStrip:LEDs_In" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "LIN" (id 0) (at 0 7.62 0)
+      (property "Reference" "LIN?" (id 0) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "LEDs_In" (id 1) (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
+      (property "Value" "LEDs_In" (id 1) (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Footprint" "" (id 2) (at -1.778 7.62 0)
+      (property "Footprint" "NeopixelStrip:LED-Strip" (id 2) (at 1.27 -7.62 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "" (id 3) (at -1.778 7.62 0)
@@ -719,7 +719,7 @@
       (symbol "LEDs_In_0_1"
         (rectangle (start -4.826 3.81) (end 5.08 -3.81)
           (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
+          (fill (type background))
         )
         (polyline
           (pts
@@ -749,13 +749,13 @@
       )
     )
     (symbol "NeopixelStrip:LEDs_Out" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "LOUT" (id 0) (at 0 7.874 0)
+      (property "Reference" "LOUT?" (id 0) (at 0 7.874 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Value" "LEDs_Out" (id 1) (at 0 6.096 0)
-        (effects (font (size 1.27 1.27)))
+        (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Footprint" "" (id 2) (at -1.778 7.62 0)
+      (property "Footprint" "NeopixelStrip:LED-Strip" (id 2) (at -1.778 7.62 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "" (id 3) (at -1.778 7.62 0)
@@ -764,7 +764,7 @@
       (symbol "LEDs_Out_0_1"
         (rectangle (start -5.08 5.08) (end 5.08 -2.54)
           (stroke (width 0.1524) (type default) (color 0 0 0 0))
-          (fill (type none))
+          (fill (type background))
         )
         (polyline
           (pts
@@ -1035,6 +1035,9 @@
     )
   )
 
+  (junction (at 157.48 47.752) (diameter 0) (color 0 0 0 0)
+    (uuid 6898b843-c6d9-4bbc-865b-ebdc12af7fd9)
+  )
   (junction (at 217.932 105.918) (diameter 0) (color 0 0 0 0)
     (uuid 83786672-0301-41d5-8f7c-bc14ac3bb102)
   )
@@ -1115,6 +1118,12 @@
   (wire (pts (xy 214.63 105.918) (xy 217.932 105.918))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid f971fb51-e2fc-405f-a449-0158e06b89f1)
+  )
+
+  (text "Allow measuring the Battery voltage \neven when the battery is disconnected \ndue to over-discharge"
+    (at 164.338 54.864 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e2016075-c0ae-4f2e-97ad-93bd9a839a3b)
   )
 
   (label "VNEO" (at 172.72 38.1 0)
@@ -1224,11 +1233,11 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "BATTERY" (shape input) (at 172.72 38.1 270) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
+  (global_label "BATTERY" (shape input) (at 155.194 40.132 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
     (uuid c08cadbf-66fb-4d71-b3bb-3860c55a7365)
-    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 172.7994 48.3145 90)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 155.1146 29.9175 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "SCK" (shape output) (at 166.37 119.38 0) (fields_autoplaced)
@@ -1373,6 +1382,25 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 004ae82b-446c-41c0-af59-ffa56b7abbaf))
+  )
+
+  (symbol (lib_id "Device:R") (at 157.48 51.562 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 34b8c0fa-795e-4e33-924b-c6ecc1885144)
+    (property "Reference" "R1" (id 0) (at 159.258 50.2919 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "100k" (id 1) (at 159.258 52.8319 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (id 2) (at 155.702 51.562 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 157.48 51.562 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a8b71422-236a-4776-960d-2c98e5a1a7a7))
+    (pin "2" (uuid 2b258d6f-b55b-4fe2-88c4-60d509f5dc02))
   )
 
   (symbol (lib_id "power:GND") (at 210.058 44.958 0) (unit 1)
@@ -1722,6 +1750,22 @@
     (pin "3" (uuid a39663ac-ac64-4d80-a21c-8d4df9034671))
   )
 
+  (symbol (lib_id "power:GND") (at 157.48 55.372 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid e2ff7594-20a7-4214-af88-d4c574e2691c)
+    (property "Reference" "#PWR0102" (id 0) (at 157.48 61.722 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 157.48 60.452 0))
+    (property "Footprint" "" (id 2) (at 157.48 55.372 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 157.48 55.372 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 592beb47-1f8e-4265-8eac-696174137dac))
+  )
+
   (symbol (lib_id "Device:C_Polarized") (at 210.058 41.148 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e60a1f34-6b2f-498f-916b-89bff7055f25)
@@ -1818,6 +1862,9 @@
     (path "/246f4d61-f770-43f4-b510-42628efbe170"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
     )
+    (path "/e2ff7594-20a7-4214-af88-d4c574e2691c"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
+    )
     (path "/4994b6ae-8df2-4c30-941b-b6aef74040b1"
       (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
@@ -1880,6 +1927,9 @@
     )
     (path "/dc7e9947-c0be-48cf-8fa7-bc1cef4d6f62"
       (reference "LOUT1") (unit 1) (value "LEDs_Out") (footprint "NeopixelStrip:LED-Strip")
+    )
+    (path "/34b8c0fa-795e-4e33-924b-c6ecc1885144"
+      (reference "R1") (unit 1) (value "100k") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
     )
     (path "/d85e1e13-e38e-4950-90e0-28ee56a30aec"
       (reference "R2") (unit 1) (value "R") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal")
